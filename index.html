@@ -1,32 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <title>我的個人頁面</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>遲碩賢 | 個人網站</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>遲碩賢</h1>
-    <p>喜歡電機、籃球、科技、創作</p>
-  </header>
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="logo">SHUO HSIEN</div>
+        <div class="nav-links">
+            <a href="#home">首頁</a>
+            <a href="#about">關於我</a>
+            <a href="#projects">作品集</a>
+            <a href="#contact">聯絡我</a>
+        </div>
+    </nav>
 
-  <section id="about">
-    <h2>關於我</h2>
-    <p>我是熱愛科技與電機工程的人...</p>
-  </section>
+    <!-- 首頁區 Hero -->
+    <header id="home" class="hero">
+        <div class="hero-text">
+            <h1>遲碩賢</h1>
+            <p>Electrical Engineering • IT 技術 • 科技創作者</p>
+            <button onclick="scrollToSection('projects')">查看作品集</button>
+        </div>
 
-  <section id="projects">
-    <h2>作品集</h2>
-    <div class="project-card">作品 1</div>
-    <div class="project-card">作品 2</div>
-  </section>
+        <img src="your-photo.jpg" class="hero-img">
+        <!-- 將此圖片換成你的大頭照 -->
+    </header>
 
-  <footer>
-    <p>Contact: email@example.com</p>
-  </footer>
+    <!-- 關於我 -->
+    <section id="about" class="section">
+        <h2>關於我</h2>
+        <p>
+            我是遲碩賢，來自高雄，喜歡科技、電機領域、籃球與 LEGO。
+            熟悉 IT 與電子系統，也參與過機器人競賽與電路設計。
+            期待未來能在智慧科技與綠能領域發展。
+        </p>
+    </section>
 
+    <!-- 技能 -->
+    <section class="section skills">
+        <h2>技能</h2>
+        <div class="skill-container">
+            <div class="skill-card">HTML / CSS / JS</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">電子電路</div>
+            <div class="skill-card">Arduino / IoT</div>
+            <div class="skill-card">Renewable Energy</div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="projects" class="section">
+        <h2>作品集</h2>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>智慧家電控制系統</h3>
+                <p>使用 Arduino + 感測器實作的自動化控制設計。</p>
+                <a href="#">查看作品</a>
+            </div>
+
+            <div class="project-card">
+                <h3>個人網站 GitHub Pages</h3>
+                <p>使用 HTML / CSS / JS 製作的科技風網站。</p>
+                <a href="#">查看作品</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Python 自動化程式</h3>
+                <p>資料處理與自動化腳本實作。</p>
+                <a href="#">查看作品</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 聯絡 -->
+    <section id="contact" class="section">
+        <h2>聯絡我</h2>
+        <p>Email：example@gmail.com</p>
+    </section>
+
+    <script src="app.js"></script>
 </body>
 </html>
-
